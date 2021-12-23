@@ -118,7 +118,7 @@
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 					<div class="block-18 shadow">
 						<div class="text">
-							<strong class="number" data-number="276">0</strong>
+							<strong class="number calDateNeeded" data-number="276">0</strong>
 							<span>코딩한 일수</span>
 						</div>
 					</div>
@@ -142,7 +142,7 @@
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 					<div class="block-18 shadow">
 						<div class="text">
-							<strong class="number" data-number="276">0</strong>
+							<strong class="number calDateNeeded" data-number="276">0</strong>
 							<span>Cups of coffee</span>
 						</div>
 					</div>
@@ -561,7 +561,13 @@
 				stroke="#F96D00" />
 		</svg></div>
 
-
+	<script type="text/javascript">
+		let y = new Date().getFullYear()
+		let m = new Date().getMonth()+1
+		let d = new Date().getDate()
+		let dif = Math.ceil((new Date(y,m,d)-new Date(2021,03,14))/60/60/24/1000)
+		let putDates = document.querySelectorAll('.calDateNeeded').forEach(x=>{x.setAttribute('data-number',dif)})
+	</script>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
