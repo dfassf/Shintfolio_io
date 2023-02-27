@@ -41,7 +41,6 @@
 					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
 					<li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
 					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-
 					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 				</ul>
 			</div>
@@ -90,22 +89,13 @@
 							<p></p>
 							<ul class="about-info mt-4 px-md-0 px-2">
 								<li class="d-flex"><span>Name:</span> <span>엄신우</span></li>
-								<li class="d-flex"><span>Address:</span> <span>서울시 동대문구 장안동</span></li>
+								<li class="d-flex"><span>Address:</span> <span>Currently private</span></li>
 								<li class="d-flex"><span>Email:</span> <span>dfassf@naver.com</span></li>
-								<li class="d-flex"><span>Phone: </span> <span>+82 10 4140 9225</span></li>
+								<li class="d-flex"><span>Phone: </span> <span>Currently private</span></li>
 							</ul>
 						</div>
 					</div>
 					<div class="counter-wrap ftco-animate d-flex mt-md-3">
-						<!-- <div class="text">
-							<p class="mb-4">
-								<span class="number" data-number="24">0</span>
-								<span>Project complete</span>
-							</p>
-							<p><a target="_blank"
-									href="https://drive.google.com/file/d/1hlXX2n15rPwT8s6vseOf9uBwid22ugWq/view"
-									class="btn btn-primary py-3 px-3">이력서 다운받기</a></p>
-						</div> -->
 					</div>
 				</div>
 			</div>
@@ -418,8 +408,8 @@
 									<div>&nbsp;<a class="btn btn-outline-secondary" target="_blank"
 											class="btn btn-outline-secondary"
 											href="https://github.com/hyejjun/AzitGallery">Github</a>&nbsp;<a
-											class="btn btn-outline-secondary" target="_blank"
-											href="http://3.36.134.169/">Link</a>
+											class="btn btn-outline-secondary alrt" 
+											onclick="return false">Link</a>
 									</div>
 								</div>
 								<span class="position">경일게임아카데미 x 피플스테크</span>
@@ -497,7 +487,7 @@
 						</div>
 						<div>
 							<h3 class="mb-4">Address</h3>
-							<p>서울시 동대문구 장안동</p>
+							<p>Currently private</p>
 						</div>
 					</div>
 				</div>
@@ -508,7 +498,7 @@
 						</div>
 						<div>
 							<h3 class="mb-4">Contact Number</h3>
-							<p><a href="tel://01041409225">+82 10 4140 9225</a></p>
+							<p><a href="" onclick="return false;">Currently private</a></p>
 						</div>
 					</div>
 				</div>
@@ -588,8 +578,9 @@
 	<script src="js/scrollax.min.js"></script>
 
 	<script src="js/main.js"></script>
-	<script type="text/javasctript">
-		console.log('aaa')
+	<script>
+		const alrt = document.querySelector('.alrt')
+		alrt.addEventListener('click',()=>{alert('The website is no longer available.')})
 	</script>
 </body>
 
